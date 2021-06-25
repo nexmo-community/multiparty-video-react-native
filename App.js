@@ -307,7 +307,7 @@ class App extends Component {
 
   videoView = () => {
     return (
-      <>
+      <SafeAreaView style={styles.fullView}>
         <View style={styles.fullView}>
           <OTSession
             apiKey={this.apiKey}
@@ -349,7 +349,7 @@ class App extends Component {
             onPress={this.toggleVideo}
           />
         </View>
-      </>
+      </SafeAreaView>
     );
   };
 
